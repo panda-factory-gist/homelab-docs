@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhomelab_docs=globalThis.webpackChunkhomelab_docs||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/homelab-docs/blog","blogTitle":"Blog","authorsListPath":"/homelab-docs/blog/authors"}')}}]);

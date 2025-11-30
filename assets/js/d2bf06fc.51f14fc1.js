@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhomelab_docs=globalThis.webpackChunkhomelab_docs||[]).push([[214],{1646:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/homelab-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
