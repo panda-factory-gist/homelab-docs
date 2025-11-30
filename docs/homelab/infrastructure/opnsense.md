@@ -8,7 +8,7 @@ sidebar_position: 3
 
 **Interface Web** : 
 ```bash
-ssh -L 8443:10.0.1.1:443 root@192.168.1.51
+ssh -L 8443:10.0.1.1:443 root@192.168.1.XX
 # Puis ouvrir : https://localhost:8443
 ```
 
