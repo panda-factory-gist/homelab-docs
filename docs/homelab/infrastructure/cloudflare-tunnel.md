@@ -49,9 +49,9 @@ Services internes (Proxmox, OPNsense)
 
 ### Tunnel Cloudflare
 
-- **Tunnel ID** : `f7fedba1-6be1-4408-a755-e9badd33f9a0`
+- **Tunnel ID** : `[tunnel-uuid]`
 - **Tunnel Name** : opnsense-access
-- **Domaine** : olympus-lab.org
+- **Domaine** : [your-domain].org
 
 ---
 
@@ -106,7 +106,7 @@ cloudflared tunnel login
 
 **Copie le lien** affiché, ouvre-le dans ton navigateur :
 1. Connecte-toi à Cloudflare
-2. Sélectionne **olympus-lab.org**
+2. Sélectionne **[your-domain].org**
 3. Clique **Authorize**
 
 Un fichier `cert.pem` est créé dans `/root/.cloudflared/`
@@ -131,20 +131,20 @@ nano /etc/cloudflared/config.yml
 
 **Contenu** :
 ```yaml
-tunnel: f7fedba1-6be1-4408-a755-e9badd33f9a0
-credentials-file: /etc/cloudflared/f7fedba1-6be1-4408-a755-e9badd33f9a0.json
+tunnel: [tunnel-uuid]
+credentials-file: /etc/cloudflared/[tunnel-uuid].json
 
 ingress:
-  - hostname: opnsense.olympus-lab.org
+  - hostname: opnsense.[your-domain].org
     service: https://10.0.1.1
     originServerName: 10.0.1.1
     originRequest:
       noTLSVerify: true
-  - hostname: proxmox.olympus-lab.org
+  - hostname: proxmox.[your-domain].org
     service: https://192.168.1.51:8006
     originRequest:
       noTLSVerify: true
-  - hostname: ssh-proxmox.olympus-lab.org
+  - hostname: ssh-proxmox.[your-domain].org
     service: ssh://192.168.1.51:22
   - service: http_status:404
 ```
@@ -231,10 +231,10 @@ Tous les enregistrements pointent vers le tunnel :
 
 | Type | Name | Target | Proxy |
 |------|------|--------|-------|
-| CNAME | opnsense | f7fedba1-6be1-4408-a755-e9badd33f9a0.cfargotunnel.com | ☁️ Proxied |
-| CNAME | proxmox | f7fedba1-6be1-4408-a755-e9badd33f9a0.cfargotunnel.com | ☁️ Proxied |
-| CNAME | ssh-proxmox | f7fedba1-6be1-4408-a755-e9badd33f9a0.cfargotunnel.com | ☁️ Proxied |
-| CNAME | docs | panda-factory-gist.github.io | ☁️ OFF |
+| CNAME | opnsense | [tunnel-uuid].cfargotunnel.com | ☁️ Proxied |
+| CNAME | proxmox | [tunnel-uuid].cfargotunnel.com | ☁️ Proxied |
+| CNAME | ssh-proxmox | [tunnel-uuid].cfargotunnel.com | ☁️ Proxied |
+| CNAME | docs | [github-user].github.io | ☁️ OFF |
 
 ---
 
@@ -244,11 +244,12 @@ Tous les enregistrements pointent vers le tunnel :
 
 ### Applications configurées
 
+
 | Application | URL | Policy |
 |-------------|-----|--------|
-| OPNsense Admin | opnsense.olympus-lab.org | Email authentication |
-| Proxmox | proxmox.olympus-lab.org | Email authentication |
-| SSH Proxmox | ssh-proxmox.olympus-lab.org | Email authentication |
+| OPNsense Admin | opnsense.[your-domain].org | Email authentication |
+| Proxmox | proxmox.[your-domain].org | Email authentication |
+| SSH Proxmox | ssh-proxmox.[your-domain].org | Email authentication |
 
 ### Créer une application
 
@@ -256,7 +257,7 @@ Tous les enregistrements pointent vers le tunnel :
 2. **Self-hosted**
 3. **Application name** : OPNsense Admin
 4. **Session duration** : 24 hours
-5. **Application domain** : opnsense.olympus-lab.org
+5. **Application domain** : opnsense.[your-domain].org
 6. **Next**
 
 **Policy** :
@@ -290,9 +291,9 @@ Tous les enregistrements pointent vers le tunnel :
 Créer/éditer `C:\Users\[TON_USER]\.ssh\config` :
 ```
 Host ssh-proxmox
-    HostName ssh-proxmox.olympus-lab.org
+    HostName ssh-proxmox.[your-domain].org
     User root
-    ProxyCommand C:\PROGRA~1\cloudflared\cloudflared.exe access ssh --hostname ssh-proxmox.olympus-lab.org
+    ProxyCommand C:\PROGRA~1\cloudflared\cloudflared.exe access ssh --hostname ssh-proxmox.[your-domain].org
 ```
 
 #### Utilisation
@@ -318,7 +319,7 @@ nano /etc/cloudflared/config.yml
 
 **Ajouter** avant la dernière ligne :
 ```yaml
-  - hostname: gitlab.olympus-lab.org
+  - hostname: gitlab.[your-domain].org
     service: http://10.0.1.100:80
 ```
 
@@ -332,25 +333,25 @@ journalctl -u cloudflared -f
 
 #### 3. Créer le DNS record
 ```bash
-cloudflared tunnel route dns opnsense-access gitlab.olympus-lab.org
+cloudflared tunnel route dns opnsense-access gitlab.[your-domain].org
 ```
 
 Ou manuellement dans Cloudflare Dashboard :
 - Type : CNAME
 - Name : gitlab
-- Target : f7fedba1-6be1-4408-a755-e9badd33f9a0.cfargotunnel.com
+- Target : [tunnel-uuid]
 - Proxy : ON ☁️
 
 #### 4. Créer l'application Cloudflare Access
 
 **https://one.dash.cloudflare.com/** → **Access** → **Applications** → **Add**
 
-- Application domain : gitlab.olympus-lab.org
+- Application domain : gitlab.[your-domain].org
 - Policy : Allow ton email
 
 #### 5. Tester
 
-https://gitlab.olympus-lab.org
+https: //gitlab.[your-domain].org
 
 ---
 
@@ -362,7 +363,7 @@ https://gitlab.olympus-lab.org
 /etc/cloudflared/config.yml
 
 # Credentials (TRÈS IMPORTANT - ne jamais perdre !)
-/etc/cloudflared/f7fedba1-6be1-4408-a755-e9badd33f9a0.json
+/etc/cloudflared/[tunnel-uuid].json
 
 # Certificat
 /etc/cloudflared/cert.pem
@@ -503,7 +504,7 @@ cloudflared tunnel create nom-tunnel
 cloudflared tunnel delete nom-tunnel
 
 # Créer une route DNS
-cloudflared tunnel route dns opnsense-access subdomain.olympus-lab.org
+cloudflared tunnel route dns opnsense-access subdomain.[your-domain].org
 
 # Lister les routes
 cloudflared tunnel route dns list
@@ -512,7 +513,7 @@ cloudflared tunnel route dns list
 cloudflared tunnel ingress validate
 
 # Tester un hostname spécifique
-cloudflared tunnel ingress rule https://proxmox.olympus-lab.org
+cloudflared tunnel ingress rule https://proxmox.[your-domain].org
 ```
 
 ---
