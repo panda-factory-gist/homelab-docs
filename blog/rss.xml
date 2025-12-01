@@ -4,84 +4,317 @@
         <title>Olympus Lab Blog</title>
         <link>https://docs.olympus-lab.org/blog</link>
         <description>Olympus Lab Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Dec 2025 13:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>https://docs.olympus-lab.org/blog/welcome</link>
-            <guid>https://docs.olympus-lab.org/blog/welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer" class="">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer" class="">blog plugin</a>.</p>
-<p>Here are a few tips you might find useful.</p>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
+            <title><![CDATA[🏛️ Olympus Lab - Infrastructure complète opérationnelle]]></title>
+            <link>https://docs.olympus-lab.org/blog/olympus-lab-setup</link>
+            <guid>https://docs.olympus-lab.org/blog/olympus-lab-setup</guid>
+            <pubDate>Mon, 01 Dec 2025 13:00:00 GMT</pubDate>
+            <description><![CDATA[Aujourd'hui marque l'achèvement de l'infrastructure Olympus Lab, mon homelab DevOps personnel. Après plusieurs semaines de travail, j'ai enfin une plateforme complète pour apprendre et expérimenter en toute sécurité.]]></description>
+            <content:encoded><![CDATA[<p>Aujourd'hui marque l'achèvement de l'infrastructure <strong>Olympus Lab</strong>, mon homelab DevOps personnel. Après plusieurs semaines de travail, j'ai enfin une plateforme complète pour apprendre et expérimenter en toute sécurité.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-le-contexte">🎯 Le contexte<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-le-contexte" class="hash-link" aria-label="Direct link to 🎯 Le contexte" title="Direct link to 🎯 Le contexte" translate="no">​</a></h2>
+<p>Je suis actuellement en alternance chez ARPEGE à Nantes en tant qu'étudiante DevOps (TSSR à l'ESGI). Mon apprentissage se concentre sur :</p>
 <ul>
-<li class=""><code>2019-05-30-welcome.md</code></li>
-<li class=""><code>2019-05-30-welcome/index.md</code></li>
+<li class="">Ansible pour l'automatisation</li>
+<li class="">GitLab CI/CD pour les pipelines</li>
+<li class="">Docker &amp; Kubernetes pour la conteneurisation</li>
+<li class="">Oracle Cloud Infrastructure pour le déploiement</li>
 </ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://docs.olympus-lab.org/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
-            <category>Facebook</category>
-            <category>Hello</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[MDX Blog Post]]></title>
-            <link>https://docs.olympus-lab.org/blog/mdx-blog-post</link>
-            <guid>https://docs.olympus-lab.org/blog/mdx-blog-post</guid>
-            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
-            <content:encoded><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer" class="">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer" class="">MDX</a>.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
-<!-- -->
-<p>For example, use JSX to create an interactive button:</p>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
-<button>Click me!</button>]]></content:encoded>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[Long Blog Post]]></title>
-            <link>https://docs.olympus-lab.org/blog/long-blog-post</link>
-            <guid>https://docs.olympus-lab.org/blog/long-blog-post</guid>
-            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hello</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://docs.olympus-lab.org/blog/first-blog-post</link>
-            <guid>https://docs.olympus-lab.org/blog/first-blog-post</guid>
-            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hola</category>
-            <category>Docusaurus</category>
+<p>Mais pour vraiment maîtriser ces technologies, j'avais besoin d'un environnement où je peux <strong>casser, reconstruire, expérimenter</strong> sans limites. D'où <strong>Olympus Lab</strong> ! 🏛️</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-architecture-finale">🏗️ Architecture finale<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#%EF%B8%8F-architecture-finale" class="hash-link" aria-label="Direct link to 🏗️ Architecture finale" title="Direct link to 🏗️ Architecture finale" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="le-setup-physique">Le setup physique<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#le-setup-physique" class="hash-link" aria-label="Direct link to Le setup physique" title="Direct link to Le setup physique" translate="no">​</a></h3>
+<p><strong>Machine</strong> : Lenovo ThinkCentre M710S</p>
+<ul>
+<li class="">CPU : Intel i5 (suffisant pour commencer)</li>
+<li class="">RAM : 16 GB (à upgrader plus tard)</li>
+<li class="">Stockage : SSD pour l'OS, HDD pour les VMs</li>
+<li class="">Réseau : 1 Gbps vers la box Internet</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="les-composants-logiciels">Les composants logiciels<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#les-composants-logiciels" class="hash-link" aria-label="Direct link to Les composants logiciels" title="Direct link to Les composants logiciels" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-proxmox-ve-atlas-dans-ma-nomenclature">1. <strong>Proxmox VE</strong> (Atlas dans ma nomenclature)<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#1-proxmox-ve-atlas-dans-ma-nomenclature" class="hash-link" aria-label="Direct link to 1-proxmox-ve-atlas-dans-ma-nomenclature" title="Direct link to 1-proxmox-ve-atlas-dans-ma-nomenclature" translate="no">​</a></h4>
+<p>L'hyperviseur qui fait tourner tout le reste. J'ai configuré 5 bridges réseau :</p>
+<ul>
+<li class=""><code>vmbr0</code> : WAN (192.168.1.0/24) - Connexion Internet</li>
+<li class=""><code>vmbr1</code> : LAN (10.0.1.0/24) - Production</li>
+<li class=""><code>vmbr2</code> : DMZ (10.0.2.0/24) - Services exposés</li>
+<li class=""><code>vmbr3</code> : DEV (10.0.3.0/24) - Environnement de test</li>
+<li class=""><code>vmbr4</code> : MGMT (10.0.4.0/24) - Administration</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-opnsense-olympus---vm-100">2. <strong>OPNsense</strong> (Olympus - VM 100)<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#2-opnsense-olympus---vm-100" class="hash-link" aria-label="Direct link to 2-opnsense-olympus---vm-100" title="Direct link to 2-opnsense-olympus---vm-100" translate="no">​</a></h4>
+<p>Le firewall FreeBSD qui gère toute la segmentation réseau. Configuration :</p>
+<ul>
+<li class="">5 interfaces réseau (1 par bridge)</li>
+<li class="">Règles firewall strictes avec isolation complète</li>
+<li class="">DHCP sur chaque réseau</li>
+<li class="">DNS forwarding vers Cloudflare (1.1.1.1)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-cloudflare-tunnel-hermes---container-202">3. <strong>Cloudflare Tunnel</strong> (Hermes - Container 202)<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#3-cloudflare-tunnel-hermes---container-202" class="hash-link" aria-label="Direct link to 3-cloudflare-tunnel-hermes---container-202" title="Direct link to 3-cloudflare-tunnel-hermes---container-202" translate="no">​</a></h4>
+<p>Le messager qui me permet d'accéder à mon homelab depuis n'importe où. Ubuntu 24.04 LXC avec <code>cloudflared</code> :</p>
+<ul>
+<li class="">256 MB RAM (ultra léger)</li>
+<li class="">Tunnel chiffré vers Cloudflare Edge</li>
+<li class="">Zéro port ouvert sur ma box Internet</li>
+<li class="">Authentification Zero Trust avec Cloudflare Access</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-segmentation-réseau">🌐 Segmentation réseau<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-segmentation-r%C3%A9seau" class="hash-link" aria-label="Direct link to 🌐 Segmentation réseau" title="Direct link to 🌐 Segmentation réseau" translate="no">​</a></h2>
+<p>Le point le plus important : <strong>l'isolation des réseaux</strong>.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">┌─────────────────────────────────────────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│              Internet                        │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└──────────────────┬──────────────────────────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                   │ WAN (192.168.1.0/24)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ┌──────▼──────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            │  OPNsense   │ ← Firewall central</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            │  (Olympus)  │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            └──────┬──────┘</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       ┌───────────┼───────────┬─────────┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">       │           │           │         │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ┌───▼───┐   ┌──▼──┐    ┌───▼──┐  ┌──▼───┐</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │  LAN  │   │ DMZ │    │ DEV  │  │ MGMT │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │ Prod  │   │ Web │    │ Test │  │Admin │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   └───────┘   └─────┘    └──────┘  └──────┘</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="les-règles-qui-changent-tout">Les règles qui changent tout<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#les-r%C3%A8gles-qui-changent-tout" class="hash-link" aria-label="Direct link to Les règles qui changent tout" title="Direct link to Les règles qui changent tout" translate="no">​</a></h3>
+<p><strong>LAN</strong> (Production) :</p>
+<ul>
+<li class="">✅ Accès Internet</li>
+<li class="">✅ Communication interne au LAN</li>
+<li class="">❌ Accès aux autres réseaux (DMZ, DEV, MGMT)</li>
+</ul>
+<p><strong>DMZ</strong> (Services exposés) :</p>
+<ul>
+<li class="">✅ Accès Internet uniquement</li>
+<li class="">❌ <strong>Aucun accès</strong> aux réseaux internes</li>
+</ul>
+<p><strong>DEV</strong> (Développement) :</p>
+<ul>
+<li class="">✅ Accès Internet uniquement</li>
+<li class="">❌ <strong>Aucun accès</strong> aux réseaux internes</li>
+</ul>
+<p><strong>MGMT</strong> (Administration) :</p>
+<ul>
+<li class="">✅ <strong>Accès partout</strong> (pour gérer l'infrastructure)</li>
+</ul>
+<p><strong>Pourquoi c'est important ?</strong> Si je fais une erreur en DEV ou si un service en DMZ est compromis, l'attaquant ne peut <strong>pas</strong> rebondir vers la production. C'est le principe de <strong>Defense in Depth</strong>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-sécurité-multi-couches">🔒 Sécurité multi-couches<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-s%C3%A9curit%C3%A9-multi-couches" class="hash-link" aria-label="Direct link to 🔒 Sécurité multi-couches" title="Direct link to 🔒 Sécurité multi-couches" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="couche-1--cloudflare-edge">Couche 1 : Cloudflare Edge<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#couche-1--cloudflare-edge" class="hash-link" aria-label="Direct link to Couche 1 : Cloudflare Edge" title="Direct link to Couche 1 : Cloudflare Edge" translate="no">​</a></h3>
+<ul>
+<li class="">Protection DDoS automatique</li>
+<li class="">WAF (Web Application Firewall)</li>
+<li class="">Filtrage géographique possible</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="couche-2--cloudflare-access-zero-trust">Couche 2 : Cloudflare Access (Zero Trust)<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#couche-2--cloudflare-access-zero-trust" class="hash-link" aria-label="Direct link to Couche 2 : Cloudflare Access (Zero Trust)" title="Direct link to Couche 2 : Cloudflare Access (Zero Trust)" translate="no">​</a></h3>
+<ul>
+<li class="">Authentification obligatoire par email</li>
+<li class="">Code OTP à usage unique</li>
+<li class="">Logs d'audit de toutes les connexions</li>
+<li class="">Session limitée à 24h</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="couche-3--cloudflare-tunnel">Couche 3 : Cloudflare Tunnel<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#couche-3--cloudflare-tunnel" class="hash-link" aria-label="Direct link to Couche 3 : Cloudflare Tunnel" title="Direct link to Couche 3 : Cloudflare Tunnel" translate="no">​</a></h3>
+<ul>
+<li class="">Connexion chiffrée sortante uniquement</li>
+<li class="">Aucun port ouvert sur ma box</li>
+<li class="">IP publique cachée</li>
+<li class="">Impossible de scanner mon réseau depuis Internet</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="couche-4--opnsense-firewall">Couche 4 : OPNsense Firewall<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#couche-4--opnsense-firewall" class="hash-link" aria-label="Direct link to Couche 4 : OPNsense Firewall" title="Direct link to Couche 4 : OPNsense Firewall" translate="no">​</a></h3>
+<ul>
+<li class="">Firewall stateful (pf de FreeBSD)</li>
+<li class="">Default Deny : tout bloqué par défaut</li>
+<li class="">Règles granulaires par réseau</li>
+<li class="">Logs de toutes les tentatives bloquées</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="couche-5--services-individuels">Couche 5 : Services individuels<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#couche-5--services-individuels" class="hash-link" aria-label="Direct link to Couche 5 : Services individuels" title="Direct link to Couche 5 : Services individuels" translate="no">​</a></h3>
+<ul>
+<li class="">2FA sur Proxmox (TOTP)</li>
+<li class="">2FA sur OPNsense (Google Authenticator)</li>
+<li class="">Mots de passe forts (20+ caractères)</li>
+<li class="">Clés SSH pour l'authentification</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-accès-distant-sans-port-forwarding">☁️ Accès distant sans port forwarding<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#%EF%B8%8F-acc%C3%A8s-distant-sans-port-forwarding" class="hash-link" aria-label="Direct link to ☁️ Accès distant sans port forwarding" title="Direct link to ☁️ Accès distant sans port forwarding" translate="no">​</a></h2>
+<p>Le gros challenge : comment accéder à mon homelab depuis chez mes parents en décembre ?</p>
+<p><strong>Solution classique</strong> : Port forwarding (ouvrir le port 51820 pour WireGuard)</p>
+<ul>
+<li class="">❌ Port ouvert = surface d'attaque</li>
+<li class="">❌ IP publique exposée</li>
+<li class="">❌ Risque de scan et brute force</li>
+</ul>
+<p><strong>Ma solution</strong> : Cloudflare Tunnel</p>
+<ul>
+<li class="">✅ Connexion sortante uniquement (aucun port ouvert)</li>
+<li class="">✅ IP publique masquée</li>
+<li class="">✅ Authentification obligatoire</li>
+<li class="">✅ Gratuit !</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="services-accessibles">Services accessibles<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#services-accessibles" class="hash-link" aria-label="Direct link to Services accessibles" title="Direct link to Services accessibles" translate="no">​</a></h3>
+<p>J'ai configuré trois points d'accès via Cloudflare Tunnel :</p>
+<ul>
+<li class=""><strong>Interface de virtualisation</strong> : Gestion des VMs et containers</li>
+<li class=""><strong>Interface du firewall</strong> : Configuration des règles réseau</li>
+<li class=""><strong>Accès SSH</strong> : Administration en ligne de commande</li>
+</ul>
+<p>Tous protégés par Cloudflare Access avec authentification obligatoire (email + code OTP).</p>
+<p>Exemple d'utilisation SSH :</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Sur mon laptop, n'importe où dans le monde</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ssh homelab-ssh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Cloudflare ouvre le navigateur pour l'authentification</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Code OTP par email</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Connexion établie ✅</span><br></span></code></pre></div></div>
+<p><strong>Note de sécurité</strong> : Les URLs exactes ne sont pas publiées publiquement.
+Prochaine étape : Activation du 2FA sur tous les services (en cours).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-documentation-complète">📚 Documentation complète<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-documentation-compl%C3%A8te" class="hash-link" aria-label="Direct link to 📚 Documentation complète" title="Direct link to 📚 Documentation complète" translate="no">​</a></h2>
+<p>Tout est documenté sur <a href="https://docs.olympus-lab.org/" target="_blank" rel="noopener noreferrer" class="">docs.olympus-lab.org</a> avec Docusaurus :</p>
+<ul>
+<li class=""><strong>Architecture</strong> : Vue d'ensemble, diagrammes réseau</li>
+<li class=""><strong>Proxmox</strong> : Configuration, bridges, VMs, containers</li>
+<li class=""><strong>OPNsense</strong> : Firewall, règles détaillées, DHCP, NAT</li>
+<li class=""><strong>Cloudflare Tunnel</strong> : Setup, configuration, troubleshooting</li>
+<li class=""><strong>Sécurité</strong> : Règles firewall expliquées, threat model</li>
+<li class=""><strong>Procédures</strong> : Accès distant, maintenance, backups</li>
+</ul>
+<p>La doc est hébergée sur GitHub Pages avec déploiement automatique via GitHub Actions. Chaque <code>git push</code> met à jour le site.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-les-galères-et-apprentissages">🛠️ Les galères et apprentissages<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#%EF%B8%8F-les-gal%C3%A8res-et-apprentissages" class="hash-link" aria-label="Direct link to 🛠️ Les galères et apprentissages" title="Direct link to 🛠️ Les galères et apprentissages" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problème-1--changement-de-hostname-proxmox">Problème 1 : Changement de hostname Proxmox<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#probl%C3%A8me-1--changement-de-hostname-proxmox" class="hash-link" aria-label="Direct link to Problème 1 : Changement de hostname Proxmox" title="Direct link to Problème 1 : Changement de hostname Proxmox" translate="no">​</a></h3>
+<p>J'ai voulu renommer <code>fox-factory</code> en <code>atlas</code> (nomenclature mythologique grecque). <strong>Grosse erreur</strong> ! Proxmox garde les références au nom original dans <code>/etc/pve/</code>, qui est un filesystem cluster spécial.</p>
+<p><strong>Résultat</strong> : Tous mes containers et VMs ont disparu de l'interface ! 😱</p>
+<p><strong>Solution</strong> : Revenir à <code>fox-factory</code> en interne, utiliser <code>atlas</code> uniquement dans la doc publique. Leçon apprise : <strong>ne jamais renommer un node Proxmox en production</strong>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problème-2--container-cloudflare-tunnel-perdu">Problème 2 : Container Cloudflare Tunnel perdu<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#probl%C3%A8me-2--container-cloudflare-tunnel-perdu" class="hash-link" aria-label="Direct link to Problème 2 : Container Cloudflare Tunnel perdu" title="Direct link to Problème 2 : Container Cloudflare Tunnel perdu" translate="no">​</a></h3>
+<p>Lors des tentatives de renommage, le disque du container 202 a été supprimé. Heureusement, <strong>j'avais un backup</strong> du dossier <code>/etc/cloudflared/</code> !</p>
+<p><strong>Solution</strong> : Recréer le container from scratch, restaurer la config. 10 minutes et c'était reparti. <strong>Les backups sauvent des vies</strong> ! 💾</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problème-3--tailscale-subnet-routing">Problème 3 : Tailscale subnet routing<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#probl%C3%A8me-3--tailscale-subnet-routing" class="hash-link" aria-label="Direct link to Problème 3 : Tailscale subnet routing" title="Direct link to Problème 3 : Tailscale subnet routing" translate="no">​</a></h3>
+<p>J'ai essayé Tailscale pour l'accès distant. Installation ultra simple, mais le <strong>subnet routing</strong> ne fonctionnait pas : impossible d'accéder à OPNsense (10.0.1.1) depuis mon laptop.</p>
+<p><strong>Pourquoi ?</strong> Tailscale donne accès au réseau de la machine où il est installé (192.168.1.x), pas aux réseaux virtuels internes (10.0.x.x).</p>
+<p><strong>Solution</strong> : Passer à Cloudflare Tunnel qui est conçu pour exposer des services internes, pas pour créer un VPN mesh.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="problème-4--certificats-ssl-auto-signés">Problème 4 : Certificats SSL auto-signés<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#probl%C3%A8me-4--certificats-ssl-auto-sign%C3%A9s" class="hash-link" aria-label="Direct link to Problème 4 : Certificats SSL auto-signés" title="Direct link to Problème 4 : Certificats SSL auto-signés" translate="no">​</a></h3>
+<p>Proxmox et OPNsense utilisent des certificats auto-signés. Les navigateurs affichent des warnings.</p>
+<p><strong>Solution temporaire</strong> : Accepter le risque (je sais que c'est mon propre serveur).</p>
+<p><strong>Solution future</strong> : Générer des vrais certificats Let's Encrypt via Cloudflare DNS challenge ou ACME.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-stack-technique-complète">📊 Stack technique complète<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-stack-technique-compl%C3%A8te" class="hash-link" aria-label="Direct link to 📊 Stack technique complète" title="Direct link to 📊 Stack technique complète" translate="no">​</a></h2>
+<table><thead><tr><th>Composant</th><th>Technologie</th><th>Version</th></tr></thead><tbody><tr><td>Hyperviseur</td><td>Proxmox VE</td><td>8.x</td></tr><tr><td>Firewall</td><td>OPNsense</td><td>24.7</td></tr><tr><td>Tunnel</td><td>Cloudflare Tunnel</td><td>Latest</td></tr><tr><td>OS Containers</td><td>Ubuntu</td><td>24.04 LTS</td></tr><tr><td>Documentation</td><td>Docusaurus</td><td>3.x</td></tr><tr><td>Hosting Doc</td><td>GitHub Pages</td><td>-</td></tr><tr><td>Domaine</td><td>Cloudflare</td><td>olympus-lab.org</td></tr><tr><td>DNS</td><td>Cloudflare</td><td>1.1.1.1</td></tr></tbody></table>
+<p><strong>Coût total</strong> : ~12€/an (juste le domaine, tout le reste est gratuit !)</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-prochaines-étapes">🚀 Prochaines étapes<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-prochaines-%C3%A9tapes" class="hash-link" aria-label="Direct link to 🚀 Prochaines étapes" title="Direct link to 🚀 Prochaines étapes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="décembre-2025-chez-mes-parents">Décembre 2025 (chez mes parents)<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#d%C3%A9cembre-2025-chez-mes-parents" class="hash-link" aria-label="Direct link to Décembre 2025 (chez mes parents)" title="Direct link to Décembre 2025 (chez mes parents)" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Tester l'accès distant en conditions réelles</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Commencer Python (Automate the Boring Stuff)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Continuer Practical Networking (cours en ligne)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Expérimenter dans le réseau DEV</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="janvier-2026-retour-à-nantes">Janvier 2026 (retour à Nantes)<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#janvier-2026-retour-%C3%A0-nantes" class="hash-link" aria-label="Direct link to Janvier 2026 (retour à Nantes)" title="Direct link to Janvier 2026 (retour à Nantes)" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Déployer <strong>GitLab CE</strong> en LAN pour le CI/CD</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Installer <strong>Pi-hole</strong> pour le DNS local + blocage pub</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Setup <strong>Prometheus + Grafana</strong> pour le monitoring</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Configurer les <strong>backups automatiques</strong> (Proxmox Backup Server ?)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="q1-2026">Q1 2026<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#q1-2026" class="hash-link" aria-label="Direct link to Q1 2026" title="Direct link to Q1 2026" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Apprendre <strong>WireGuard</strong> (dans des VMs de test)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Déployer un cluster <strong>K3s</strong> en DEV</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Automatiser avec <strong>Ansible</strong> (playbooks pour tout)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Ajouter un deuxième node Proxmox (si budget)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="long-terme">Long terme<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#long-terme" class="hash-link" aria-label="Direct link to Long terme" title="Direct link to Long terme" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Certifications : AWS, Azure, Kubernetes</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Contribuer à des projets open source</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Documenter et partager mes apprentissages</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-réflexions">💭 Réflexions<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-r%C3%A9flexions" class="hash-link" aria-label="Direct link to 💭 Réflexions" title="Direct link to 💭 Réflexions" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ce-que-jai-appris">Ce que j'ai appris<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#ce-que-jai-appris" class="hash-link" aria-label="Direct link to Ce que j'ai appris" title="Direct link to Ce que j'ai appris" translate="no">​</a></h3>
+<p><strong>Networking</strong> : Avant ce projet, les VLANs et la segmentation réseau étaient abstraits. Maintenant, je <strong>comprends</strong> vraiment comment fonctionne un firewall, le NAT, le routing, les ACLs. J'ai cassé des choses, debuggé pendant des heures, et c'est comme ça qu'on apprend vraiment.</p>
+<p><strong>Sécurité</strong> : Le principe de <strong>Defense in Depth</strong> n'est pas juste théorique. Chaque couche compte. Si j'avais juste fait du port forwarding basique, j'aurais un point d'entrée unique. Maintenant, pour atteindre mes services, il faut :</p>
+<ol>
+<li class="">Passer Cloudflare Edge (DDoS protection)</li>
+<li class="">S'authentifier via Access (email + OTP)</li>
+<li class="">Traverser le tunnel chiffré</li>
+<li class="">Passer le firewall OPNsense</li>
+<li class="">S'authentifier sur le service final</li>
+</ol>
+<p><strong>Infrastructure as Code</strong> : Documenter tout dans Docusaurus me force à comprendre ce que je fais. Si je ne peux pas l'expliquer clairement dans la doc, c'est que je ne le comprends pas vraiment. La doc devient aussi un <strong>backup de ma connaissance</strong>.</p>
+<p><strong>Échecs = Apprentissage</strong> : J'ai cassé mon infrastructure plusieurs fois. Chaque fois, j'ai appris :</p>
+<ul>
+<li class="">L'importance des backups</li>
+<li class="">Comment débugger méthodiquement</li>
+<li class="">La valeur de la documentation</li>
+<li class="">Qu'il faut tester avant de modifier la prod</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pourquoi-un-homelab-en-2025-">Pourquoi un homelab en 2025 ?<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#pourquoi-un-homelab-en-2025-" class="hash-link" aria-label="Direct link to Pourquoi un homelab en 2025 ?" title="Direct link to Pourquoi un homelab en 2025 ?" translate="no">​</a></h3>
+<p>Certains diraient : "Pourquoi ne pas juste utiliser AWS ou Azure ?"</p>
+<p><strong>Ma réponse</strong> :</p>
+<ul>
+<li class="">Je veux comprendre <strong>comment ça marche en dessous</strong></li>
+<li class="">Les clouds abstraient trop de choses</li>
+<li class="">Un homelab, c'est <strong>gratuit</strong> (après l'investissement initial)</li>
+<li class="">Je peux casser sans craindre une facture de 500€</li>
+<li class="">C'est <strong>mon</strong> labo, mes règles, mes expérimentations</li>
+</ul>
+<p>En alternance, je travaille sur Oracle Cloud et GitLab. Mais dans mon homelab, je peux tout essayer : k3s, Ansible, Terraform, Prometheus, sans limite.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-pour-les-débutants-qui-lisent-ça">🎓 Pour les débutants qui lisent ça<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-pour-les-d%C3%A9butants-qui-lisent-%C3%A7a" class="hash-link" aria-label="Direct link to 🎓 Pour les débutants qui lisent ça" title="Direct link to 🎓 Pour les débutants qui lisent ça" translate="no">​</a></h2>
+<p>Si tu débutes en DevOps et que tu veux créer ton homelab :</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="commence-petit">Commence petit<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#commence-petit" class="hash-link" aria-label="Direct link to Commence petit" title="Direct link to Commence petit" translate="no">​</a></h3>
+<ul>
+<li class="">Une seule VM suffit au début</li>
+<li class="">Pas besoin de segmentation réseau complexe</li>
+<li class="">Apprends Proxmox ou VirtualBox d'abord</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="documente-tout">Documente tout<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#documente-tout" class="hash-link" aria-label="Direct link to Documente tout" title="Direct link to Documente tout" translate="no">​</a></h3>
+<ul>
+<li class="">Prends des notes</li>
+<li class="">Capture des screenshots</li>
+<li class="">Écris les commandes que tu utilises</li>
+<li class="">Future toi te remerciera</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="casse-des-choses">Casse des choses<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#casse-des-choses" class="hash-link" aria-label="Direct link to Casse des choses" title="Direct link to Casse des choses" translate="no">​</a></h3>
+<ul>
+<li class="">Les erreurs sont tes meilleures profs</li>
+<li class="">Fais des snapshots avant de modifier</li>
+<li class="">Teste dans un environnement isolé (DEV)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="apprends-les-bases">Apprends les bases<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#apprends-les-bases" class="hash-link" aria-label="Direct link to Apprends les bases" title="Direct link to Apprends les bases" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Networking</strong> : Comprends IP, subnets, routing, NAT</li>
+<li class=""><strong>Linux</strong> : CLI, permissions, services systemd</li>
+<li class=""><strong>Virtualisation</strong> : Concepts de VMs, containers, hyperviseurs</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sécurité-dabord">Sécurité d'abord<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#s%C3%A9curit%C3%A9-dabord" class="hash-link" aria-label="Direct link to Sécurité d'abord" title="Direct link to Sécurité d'abord" translate="no">​</a></h3>
+<ul>
+<li class="">Jamais de port forwarding sans réfléchir</li>
+<li class="">Toujours des mots de passe forts</li>
+<li class="">2FA partout où c'est possible</li>
+<li class="">Backups réguliers</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-métriques">📈 Métriques<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-m%C3%A9triques" class="hash-link" aria-label="Direct link to 📈 Métriques" title="Direct link to 📈 Métriques" translate="no">​</a></h2>
+<p>Depuis le début du projet :</p>
+<ul>
+<li class=""><strong>Temps investi</strong> : ~40 heures (configuration, debug, doc)</li>
+<li class=""><strong>Erreurs commises</strong> : Trop pour compter (c'est ça apprendre !)</li>
+<li class=""><strong>Services déployés</strong> : 3 (Proxmox, OPNsense, Cloudflare Tunnel)</li>
+<li class=""><strong>Lignes de doc</strong> : ~3000 (7 fichiers Markdown)</li>
+<li class=""><strong>Commits Git</strong> : 15+</li>
+<li class=""><strong>Café consommé</strong> : Beaucoup ☕</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-nomenclature-mythologique">🌸 Nomenclature mythologique<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-nomenclature-mythologique" class="hash-link" aria-label="Direct link to 🌸 Nomenclature mythologique" title="Direct link to 🌸 Nomenclature mythologique" translate="no">​</a></h2>
+<p>Parce que DevOps, c'est aussi s'amuser :</p>
+<ul>
+<li class=""><strong>Atlas</strong> : Proxmox node (le titan qui porte l'infrastructure)</li>
+<li class=""><strong>Olympus</strong> : OPNsense (le mont Olympe, centre de contrôle)</li>
+<li class=""><strong>Hermes</strong> : Cloudflare Tunnel (le messager des dieux)</li>
+</ul>
+<p>Prochains services :</p>
+<ul>
+<li class=""><strong>Hephaestus</strong> : GitLab (la forge de code)</li>
+<li class=""><strong>Prometheus</strong> : Monitoring (approprié !)</li>
+<li class=""><strong>Apollo</strong> : CI/CD pipeline</li>
+<li class=""><strong>Artemis</strong> : Backup system</li>
+<li class=""><strong>Poseidon</strong> : Storage server</li>
+</ul>
+<p>Logo : 🌸 Hanami (fleur de cerisier) + 🌙 Lune = esthétique japonaise + mythologie grecque.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-conclusion">🎉 Conclusion<a href="https://docs.olympus-lab.org/blog/olympus-lab-setup#-conclusion" class="hash-link" aria-label="Direct link to 🎉 Conclusion" title="Direct link to 🎉 Conclusion" translate="no">​</a></h2>
+<p><strong>Olympus Lab est maintenant opérationnel</strong> ! Je peux :</p>
+<ul>
+<li class="">✅ Créer des VMs et containers à volonté</li>
+<li class="">✅ Expérimenter en toute sécurité</li>
+<li class="">✅ Accéder depuis n'importe où</li>
+<li class="">✅ Apprendre en cassant et réparant</li>
+<li class="">✅ Documenter mes apprentissages</li>
+</ul>
+<p>La prochaine fois que quelqu'un me demandera "C'est quoi DevOps ?", je pourrai montrer mon homelab et dire : <strong>"C'est ça. Et c'est moi qui l'ai construit."</strong> 💪</p>
+<p>Rendez-vous dans le prochain article pour le déploiement de GitLab ! 🚀</p>
+<hr>
+<p><strong>Stack</strong> : Proxmox VE • OPNsense • Cloudflare Tunnel • Ubuntu 24.04 • Docusaurus</p>
+<p><strong>Tags</strong> : #DevOps #Homelab #Infrastructure #Networking #Security #Learning</p>
+<p><strong>Documentation</strong> : <a href="https://docs.olympus-lab.org/" target="_blank" rel="noopener noreferrer" class="">docs.olympus-lab.org</a></p>]]></content:encoded>
+            <category>infrastructure</category>
+            <category>proxmox</category>
+            <category>opnsense</category>
+            <category>cloudflare</category>
+            <category>homelab</category>
+            <category>devops</category>
         </item>
     </channel>
 </rss>
