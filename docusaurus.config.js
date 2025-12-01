@@ -18,7 +18,6 @@ const config = {
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
-
   // Set the production url of your site here
   url: 'https://docs.olympus-lab.org',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -87,9 +86,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Factory',
+        title: 'Olympus Lab',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Olympus Lab Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -104,7 +103,7 @@ const config = {
             label: 'Blog', 
             position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/panda-factory-gist',
             label: 'GitHub',
             position: 'right',
           },
@@ -112,35 +111,49 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          alt: 'Olympus Lab Logo',
+          src: 'img/logo.svg',
+          width: 50,
+          height: 50,
+        },
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Vue d\'ensemble',
+                to: '/docs/homelab/infrastructure/overview',
+              },
+              {
+                label: 'Accès distant',
+                to: '/docs/homelab/procedures/access-remote',
+              },
+              {
+                label: 'Maintenance',
+                to: '/docs/homelab/procedures/maintenance',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Accès',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Proxmox',
+                href: 'https://proxmox.olympus-lab.org',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'OPNsense',
+                href: 'https://opnsense.olympus-lab.org',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Cloudflare',
+                href: 'https://one.dash.cloudflare.com',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Plus',
             items: [
               {
                 label: 'Blog',
@@ -148,12 +161,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/panda-factory-gist',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Olympus Lab 🌸 Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
