@@ -65,17 +65,17 @@ volumes:
   uptime-kuma:
 ```
 
-**Accès** : https://uptime.[domain].org
+**Accès** : https: //uptime.[domain].org
 
 ### Monitors configurés
 
 | Service | Type | URL | Intervalle | Retry |
 |---------|------|-----|------------|-------|
-| Proxmox | HTTP(s) | https://proxmox.[domain].org | 60s | 3 |
-| OPNsense | HTTP(s) | https://opnsense.[domain].org | 60s | 3 |
-| Dockge | HTTP(s) | https://dockge.[domain].org | 60s | 3 |
-| Nextcloud | HTTP(s) | https://nextcloud.[domain].org | 60s | 3 |
-| Documentation | HTTP(s) | https://docs.[domain].org | 300s | 2 |
+| Proxmox | HTTP(s) | https: //proxmox.[domain].org | 60s | 3 |
+| OPNsense | HTTP(s) | https: //opnsense.[domain].org | 60s | 3 |
+| Dockge | HTTP(s) | https: //dockge.[domain].org | 60s | 3 |
+| Nextcloud | HTTP(s) | https: //nextcloud.[domain].org | 60s | 3 |
+| Documentation | HTTP(s) | https: //docs.[domain].org | 300s | 2 |
 
 ### Notifications Discord (Iris 🌈)
 
@@ -171,7 +171,7 @@ services:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=[mot-de-passe-fort]
-      - GF_SERVER_ROOT_URL=https://grafana.[domain].org
+      - GF_SERVER_ROOT_URL=https: //grafana.[domain].org
     volumes:
       - grafana_data:/var/lib/grafana
     depends_on:
@@ -275,8 +275,8 @@ scrape_configs:
 
 ### Accès
 
-- **Prometheus** : https://prometheus.[domain].org
-- **Grafana** : https://grafana.[domain].org
+- **Prometheus** : https: //prometheus.[domain].org
+- **Grafana** : https: //grafana.[domain].org
 - **Login Grafana** : admin / [mot-de-passe]
 
 ### Alertes Prometheus

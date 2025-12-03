@@ -44,7 +44,7 @@ services:
       - DOCKGE_STACKS_DIR=/opt/stacks
 ```
 
-**Accès** : https://dockge.[domain].org (protégé par Cloudflare Access)
+**Accès** : https: //dockge.[domain].org (protégé par Cloudflare Access)
 
 **Avantages** :
 - Interface graphique pour déployer des stacks
@@ -74,7 +74,7 @@ volumes:
   uptime-kuma:
 ```
 
-**Accès** : https://uptime.[domain].org
+**Accès** : https: //uptime.[domain].org
 
 **Services monitorés** :
 - Proxmox
@@ -151,7 +151,7 @@ networks:
   nextcloud_net:
 ```
 
-**Accès** : https://nextcloud.[domain].org
+**Accès** : https: //nextcloud.[domain].org
 
 **Fonctionnalités** :
 - Synchronisation automatique (desktop + mobile)
@@ -173,7 +173,7 @@ credentials-file: /etc/cloudflared/[tunnel-id].json
 ingress:
   # Services existants
   - hostname: opnsense.[domain].org
-    service: https://10.0.1.1
+    service: https: //10.0.1.1
     originServerName: 10.0.1.1
     originRequest:
       noTLSVerify: true

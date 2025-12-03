@@ -17,7 +17,7 @@ Tous les services déployés via Docker sur la VM Docker (10.0.1.102).
 - **Réseau** : LAN (vmbr1)
 
 **Gestion** :
-- Interface : Dockge (https://dockge.[domain].org)
+- Interface : Dockge (https: //dockge.[domain].org)
 - Accès SSH : `ssh docker-admin@10.0.1.102`
 
 ---
@@ -45,7 +45,7 @@ services:
 
 ### Accès
 
-- **URL** : https://dockge.[domain].org
+- **URL** : https: //dockge.[domain].org
 - **Protection** : Cloudflare Access
 - **Credentials** : [stocker dans gestionnaire de mots de passe]
 
@@ -87,7 +87,7 @@ volumes:
 
 ### Accès
 
-- **URL** : https://uptime.[domain].org
+- **URL** : https: //uptime.[domain].org
 - **Bot Discord** : Iris 🌈
 - **Webhook** : [stocker séparément]
 
@@ -95,11 +95,11 @@ volumes:
 
 | Service | URL | Intervalle |
 |---------|-----|------------|
-| Proxmox | https://proxmox.[domain].org | 60s |
-| OPNsense | https://opnsense.[domain].org | 60s |
-| Dockge | https://dockge.[domain].org | 60s |
-| Nextcloud | https://nextcloud.[domain].org | 60s |
-| Documentation | https://docs.[domain].org | 300s |
+| Proxmox | https: //proxmox.[domain].org | 60s |
+| OPNsense | https: //opnsense.[domain].org | 60s |
+| Dockge | https: //dockge.[domain].org | 60s |
+| Nextcloud | https: //nextcloud.[domain].org | 60s |
+| Documentation | https: //docs.[domain].org | 300s |
 
 ### Alertes Discord
 
@@ -182,14 +182,14 @@ networks:
 
 ### Accès
 
-- **URL Web** : https://nextcloud.[domain].org
-- **WebDAV** : https://nextcloud.[domain].org/remote.php/dav/
+- **URL Web** : https: //nextcloud.[domain].org
+- **WebDAV** : https: //nextcloud.[domain].org/remote.php/dav/
 - **Admin** : admin / [mot-de-passe]
 
 ### Clients
 
 **Desktop** :
-- Windows : https://nextcloud.com/install/#install-clients
+- Windows : https: //nextcloud.com/install/#install-clients
 - Configuration : Server URL + credentials
 
 **Mobile** :
