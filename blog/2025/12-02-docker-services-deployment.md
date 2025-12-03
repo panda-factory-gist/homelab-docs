@@ -478,8 +478,8 @@ Tu apprendras **10x plus vite** qu'en regardant des cours.
 - Uptime Kuma : https://github.com/louislam/uptime-kuma
 
 **Mon infrastructure** :
-- Documentation : https://docs.[domain].org
-- Monitoring : https://uptime.[domain].org
+- Documentation : https: //docs.[domain].org
+- Monitoring : https: //uptime.[domain].org
 
 ---
 
