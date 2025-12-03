@@ -19,8 +19,14 @@ const sidebars = {
         {
           type: 'category',
           label: 'Sécurité',
+          items: ['homelab/security/firewall-rules'],
+        },
+        {
+          type: 'category',
+          label: 'Services', 
           items: [
-            'homelab/security/firewall-rules',
+            'homelab/services/docker-containers',
+            'homelab/services/monitoring',
           ],
         },
         {
@@ -42,21 +48,7 @@ const sidebars = {
         'homelab/guide_devops',
       ],
     },
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: [
-        'tutorial/tutorial-basics/create-a-document',
-        'tutorial/tutorial-basics/create-a-blog-post',
-        'tutorial/tutorial-basics/create-a-page',
-        'tutorial/tutorial-basics/markdown-features',
-        'tutorial/tutorial-basics/deploy-your-site',
-        'tutorial/tutorial-basics/congratulations',
-        'tutorial/tutorial-extras/manage-docs-versions',
-        'tutorial/tutorial-extras/translate-your-site',
-      ],
-    },
   ],
 };
 
-export default sidebars;
+module.exports = sidebars;
