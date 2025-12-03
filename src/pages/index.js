@@ -51,48 +51,52 @@ function FeatureCard({icon, title, description, link}) {
 }
 
 function HomepageFeatures() {
+  const features = [
+    {
+      title: '🌐 Architecture Réseau',
+      description: 'Segmentation en 4 réseaux isolés (LAN/DMZ/DEV/MGMT) avec firewall OPNsense',
+      link: '/docs/homelab/infrastructure/opnsense',
+    },
+    {
+      title: '🔒 Sécurité Avancée',
+      description: 'Defense in Depth avec 5 couches de sécurité et Zero Trust',
+      link: '/docs/homelab/security/firewall-rules',
+    },
+    {
+      title: '☁️ Accès Distant',
+      description: 'Cloudflare Tunnel avec authentification Zero Trust, zéro port ouvert',
+      link: '/docs/homelab/infrastructure/cloudflare-tunnel',
+    },
+    {
+      title: '🐳 Services Docker',
+      description: 'Nextcloud, Uptime Kuma, et plus via Dockge',
+      link: '/docs/homelab/services/docker-containers',
+    },
+    {
+      title: '📊 Monitoring 24/7',
+      description: 'Uptime Kuma avec alertes Discord (Iris 🌈)',
+      link: '/docs/homelab/services/monitoring',
+    },
+    {
+      title: '🌍 Accès Global',
+      description: 'Services accessibles depuis partout, protégés par Cloudflare Access',
+      link: '/docs/homelab/procedures/access-remote',
+    },
+  ];
+
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          <FeatureCard
-            icon="🌐"
-            title="Architecture Réseau"
-            description="Segmentation complète avec 4 réseaux isolés (LAN, DMZ, DEV, MGMT) gérés par OPNsense"
-            link="/docs/homelab/infrastructure/opnsense"
-          />
-          <FeatureCard
-            icon="🔒"
-            title="Sécurité Avancée"
-            description="Firewall stateful, règles granulaires, isolation complète et authentification multi-facteurs"
-            link="/docs/homelab/security/firewall-rules"
-          />
-          <FeatureCard
-            icon="☁️"
-            title="Accès Distant"
-            description="Cloudflare Tunnel sans port forwarding, protection DDoS et authentification Zero Trust"
-            link="/docs/homelab/infrastructure/cloudflare-tunnel"
-          />
-        </div>
-        <div className="row" style={{marginTop: '2rem'}}>
-          <FeatureCard
-            icon="📦"
-            title="Virtualisation"
-            description="Proxmox VE avec VMs et containers LXC, snapshots et gestion centralisée"
-            link="/docs/homelab/infrastructure/proxmox"
-          />
-          <FeatureCard
-            icon="🛠️"
-            title="Maintenance"
-            description="Procédures de backup, mises à jour régulières et monitoring des services"
-            link="/docs/homelab/procedures/maintenance"
-          />
-          <FeatureCard
-            icon="🌍"
-            title="Accès Global"
-            description="Gérez votre infrastructure depuis n'importe où dans le monde de manière sécurisée"
-            link="/docs/homelab/procedures/maintenance"
-          />
+        <div className={styles.featuresGrid}>
+          {features.map((feature, idx) => (
+            <div key={idx} className={styles.featureCard}>
+              <h3>{feature.title}</h3>
+              <p>{feature.description}</p>
+              <a href={feature.link} className={styles.featureLink}>
+                En savoir plus →
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -100,35 +104,81 @@ function HomepageFeatures() {
 }
 
 function TechStack() {
+  const technologies = [
+    {
+      title: 'Proxmox VE 8.x',
+      description: 'Hyperviseur de virtualisation',
+      icon: '🖥️',
+    },
+    {
+      title: 'OPNsense 24.7',
+      description: 'Firewall & routeur',
+      icon: '🔥',
+    },
+    {
+      title: 'Cloudflare Tunnel',
+      description: 'Accès distant sécurisé',
+      icon: '☁️',
+    },
+    {
+      title: 'Ubuntu 24.04 LTS',
+      description: 'OS containers',
+      icon: '🐧',
+    },
+    {
+      title: 'Docker & Compose',
+      description: 'Conteneurisation',
+      icon: '🐳',
+    },
+    {
+      title: 'Dockge',
+      description: 'Gestion Docker',
+      icon: '🎛️',
+    },
+    {
+      title: 'Nextcloud',
+      description: 'Cloud personnel',
+      icon: '☁️',
+    },
+    {
+      title: 'Uptime Kuma',
+      description: 'Monitoring',
+      icon: '📊',
+    },
+    {
+      title: 'PostgreSQL 16',
+      description: 'Base de données',
+      icon: '🐘',
+    },
+    {
+      title: 'Redis',
+      description: 'Cache',
+      icon: '⚡',
+    },
+    {
+      title: 'Cloudflare Access',
+      description: 'Zero Trust',
+      icon: '🔐',
+    },
+    {
+      title: 'Proxmox Snapshots',
+      description: 'Sauvegarde',
+      icon: '💾',
+    },
+  ];
+
   return (
     <section className={styles.techStack}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Stack Technologique</h2>
+        <h2>🛠️ Technologies utilisées</h2>
         <div className={styles.techGrid}>
-          <div className={styles.techItem}>
-            <strong>Virtualisation</strong>
-            <p>Proxmox VE 8.x</p>
-          </div>
-          <div className={styles.techItem}>
-            <strong>Firewall</strong>
-            <p>OPNsense 24.7</p>
-          </div>
-          <div className={styles.techItem}>
-            <strong>Tunnel</strong>
-            <p>Cloudflare Tunnel</p>
-          </div>
-          <div className={styles.techItem}>
-            <strong>OS</strong>
-            <p>Ubuntu 24.04 LTS</p>
-          </div>
-          <div className={styles.techItem}>
-            <strong>Monitoring</strong>
-            <p>Logs Cloudflare Access</p>
-          </div>
-          <div className={styles.techItem}>
-            <strong>Backup</strong>
-            <p>Proxmox Snapshots</p>
-          </div>
+          {technologies.map((tech, idx) => (
+            <div key={idx} className={styles.techCard}>
+              <div className={styles.techIcon}>{tech.icon}</div>
+              <h3>{tech.title}</h3>
+              <p>{tech.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -136,31 +186,56 @@ function TechStack() {
 }
 
 function QuickLinks() {
+  const links = [
+    {
+      title: '🖥️ Proxmox',
+      url: 'https://proxmox.olympus-lab.org',
+      description: 'Interface de virtualisation',
+    },
+    {
+      title: '🔥 OPNsense',
+      url: 'https://opnsense.olympus-lab.org',
+      description: 'Firewall & routeur',
+    },
+    {
+      title: '🐳 Dockge',
+      url: 'https://dockge.olympus-lab.org',
+      description: 'Gestion Docker',
+    },
+    {
+      title: '☁️ Nextcloud',
+      url: 'https://nextcloud.olympus-lab.org',
+      description: 'Cloud personnel',
+    },
+    {
+      title: '📊 Uptime Kuma',
+      url: 'https://uptime.olympus-lab.org',
+      description: 'Monitoring',
+    },
+    {
+      title: '☁️ Cloudflare',
+      url: 'https://one.dash.cloudflare.com',
+      description: 'Tunnel & Access',
+    },
+  ];
+
   return (
     <section className={styles.quickLinks}>
       <div className="container">
-        <h2 className={styles.sectionTitle}>Accès Rapide</h2>
+        <h2>🔗 Accès rapides</h2>
         <div className={styles.linksGrid}>
-          <a href="https://proxmox.olympus-lab.org" className={styles.linkCard}>
-            <div className={styles.linkIcon}>🖥️</div>
-            <h3>Proxmox</h3>
-            <p>Gestion des VMs et containers</p>
-          </a>
-          <a href="https://opnsense.olympus-lab.org" className={styles.linkCard}>
-            <div className={styles.linkIcon}>🔥</div>
-            <h3>OPNsense</h3>
-            <p>Configuration firewall</p>
-          </a>
-          <a href="https://one.dash.cloudflare.com" className={styles.linkCard}>
-            <div className={styles.linkIcon}>☁️</div>
-            <h3>Cloudflare</h3>
-            <p>Dashboard Zero Trust</p>
-          </a>
-          <a href="https://github.com" className={styles.linkCard}>
-            <div className={styles.linkIcon}>📚</div>
-            <h3>GitHub</h3>
-            <p>Code source de la doc</p>
-          </a>
+          {links.map((link, idx) => (
+            <a 
+              key={idx} 
+              href={link.url} 
+              className={styles.linkCard}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>{link.title}</h3>
+              <p>{link.description}</p>
+            </a>
+          ))}
         </div>
       </div>
     </section>
